@@ -1,0 +1,159 @@
+@import 'var.less';
+
+body {
+	margin: 0px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+.logo-svg {
+	margin-top: 50px;
+	margin-left: 160px;
+}
+
+.box-form {
+	width: 628px;
+	height: 553px;
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 2px solid #EDF0F6;
+	border-radius: 10px;
+	
+	.links-box {
+		width: 430px;
+		margin: 0 auto;
+		padding-top: 50px;
+		padding-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		.links-title {
+			font-size: @mainFontSize;
+			font-family: @mainFont;
+		}
+		.navigation {
+			.nav-list {
+				display: flex;
+				&-item:not(:last-child) {
+					margin-right: 45px;
+				}
+			}
+			
+		}
+	}
+}
+.or {
+	color: #9FA8B8;
+	font-size: @mainFontSize;
+	font-family: @mainFont;
+	text-transform: uppercase;
+	position: relative;
+}
+.or::before {
+	content: '';
+	display: inline-block;
+	margin-bottom: 6px;
+	width: 287px;
+	height: 1px;
+	background-color: #EDF0F6;
+	margin-right: 12px;
+}
+.or::after {
+	content: '';
+	display: inline-block;
+	margin-bottom: 6px;
+	width: 287px;
+	height: 1px;
+	background-color: #EDF0F6;
+	margin-left: 12px;
+
+}
+
+
+.form {
+	width: 430px;
+	margin: 0 auto;
+	text-align: center;
+	.form-box {
+		display: flex;
+		margin-bottom: 35px;
+		&__btn {
+			width: 50%;
+			height: 48px;
+			color: @mainColor;
+			background-color: transparent;
+			border: 2px solid @mainColor;
+		}
+		&__btn:active {
+			color: @whiteColor;
+			background-color: @mainColor;
+		}
+		.btn-in {
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-right: 0px;
+		}
+		.btn-up {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	}
+
+	.form-input {
+		width: 100%;
+		height: 49px;
+		padding-left: 44px;
+		box-sizing: border-box;
+		color: #9FA8B8;
+		font-size: @mainFontSize;
+		font-family: @mainFont;
+		border: 2px solid #EDF0F6;
+		border-radius: 4px;
+	}
+	.box-input-svg:not(:last-child) {
+		margin-bottom: 18px;
+	}
+
+	.box-input-svg {
+		position: relative;
+	}
+	.svg-icons {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 15px;
+	}
+	.label-check {
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		color: #9FA8B8;
+		.checkbox {
+			margin-right: 10px;
+			border-color: C4C4C4;
+			background-color: transparent;
+			margin-left: 20px;
+		}
+	}
+	.last-sign-up {
+		margin-top: 12px;
+		margin-bottom: 35px;
+		width: 120px;
+		height: 45px;
+		color: @whiteColor;
+		background-color: @mainColor;
+		border: 0px;
+		border-radius: 4px;
+	}
+}
+.footer {
+	&__sect {
+		margin-top: 30px;
+		width: 98vw;
+		height: 250px;
+		background: url(../img/Vector-form-b.svg) center/cover no-repeat;
+	}
+}
